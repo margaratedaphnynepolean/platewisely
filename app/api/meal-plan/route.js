@@ -3,6 +3,7 @@ import { planRequestSchema } from "@/lib/server/mealPlanSchema";
 import { resolveSelectedIngredients } from "@/lib/server/resolveIngredients";
 import { PlanError } from "@/lib/server/planError";
 import { makeValidMealPlan } from "@/lib/server/makeValidMealPlan";
+import { checkPlanAllowance, getVisitorId } from "@/lib/server/rateLimit";
 import { siteConfig } from "@/config/siteConfig";
 
 // Gemini can take a while to write a full week, and we may ask up to 3 times.
@@ -41,6 +42,9 @@ export async function POST(request) {
       400,
     );
   }
+
+  const allowance = checkPlanAllowance(getVisitorId(request));
+  if (!allowance.allowed) return errorResponse(allowance.message, 429);
 
   try {
     const plan = await makeValidMealPlan(household, ingredients);

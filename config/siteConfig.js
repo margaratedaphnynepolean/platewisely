@@ -17,6 +17,11 @@ export const siteConfig = {
   },
 
   // Limits for the plans (free tier numbers are placeholders until the pricing decision)
+  // How many plans can be made in 24 hours. Each plan costs AI usage.
+  rateLimit: {
+    plansPerVisitorPerDay: 3,
+    plansPerDayForEveryone: 20,
+  },
   limits: {
     daysInPlan: 7,
     mealsPerDay: ["Breakfast", "Lunch", "Dinner", "Snacks"],
