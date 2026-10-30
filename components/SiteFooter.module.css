@@ -1,0 +1,5 @@
+.footer {
+  padding-top: var(--space-medium);
+  padding-bottom: var(--space-large);
+  font-size: 0.9rem;
+}

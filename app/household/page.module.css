@@ -1,0 +1,15 @@
+.main {
+  padding-top: var(--space-medium);
+  padding-bottom: var(--space-large);
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: clamp(1.7rem, 6vw, 2.4rem);
+  margin-bottom: var(--space-small);
+}
+
+.intro {
+  margin-bottom: var(--space-large);
+}

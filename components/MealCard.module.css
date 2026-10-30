@@ -1,0 +1,31 @@
+.card {
+  padding: var(--space-small) var(--space-medium);
+  margin-bottom: var(--space-small);
+  border: 2px solid var(--color-charcoal);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.mealType {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--color-leaf);
+}
+
+.mealType span {
+  margin-left: 0.5rem;
+  font-weight: 400;
+  color: var(--color-charcoal);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.dishName {
+  font-size: 1.3rem;
+  margin: 0.15rem 0 0.4rem;
+}
+
+.detail {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+}

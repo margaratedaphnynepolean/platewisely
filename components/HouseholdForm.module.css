@@ -1,0 +1,10 @@
+.status {
+  margin-top: var(--space-medium);
+  min-height: 1.6em;
+}
+
+.nextStep {
+  display: block;
+  width: fit-content;
+  margin-top: var(--space-small);
+}

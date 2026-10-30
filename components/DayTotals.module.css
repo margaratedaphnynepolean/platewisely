@@ -1,0 +1,12 @@
+.box {
+  margin-bottom: var(--space-small);
+  padding: var(--space-small) var(--space-medium);
+  border-left: 6px solid var(--color-leaf);
+  background: #fff;
+}
+
+.note {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}

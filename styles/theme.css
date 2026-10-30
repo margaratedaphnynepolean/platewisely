@@ -1,0 +1,118 @@
+/* Shared look for the whole app: spacing, base text and buttons.
+   Colours come from config/siteConfig.js, not from here. */
+
+:root {
+  --space-small: 0.75rem;
+  --space-medium: 1.5rem;
+  --space-large: 3rem;
+  --page-width: 62rem;
+  --radius: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* Keeps content a comfortable width and centred on big screens */
+.page-width {
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 var(--space-medium);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius);
+  background: var(--color-turmeric);
+  color: var(--color-charcoal);
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--color-charcoal);
+}
+
+.button:hover {
+  background: var(--color-charcoal);
+  color: var(--color-cream);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-leaf);
+  outline-offset: 3px;
+}
+
+/* Shared pieces for forms */
+.field-group {
+  border: 0;
+  padding: 0;
+  margin: 0 0 var(--space-large);
+}
+
+.field-label {
+  display: block;
+  padding: 0;
+  margin-bottom: var(--space-small);
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.field-hint {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-bottom: var(--space-small);
+}
+
+.text-input {
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.7rem 0.9rem;
+  border: 2px solid var(--color-charcoal);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--color-charcoal);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Hidden on screen but still read out by screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

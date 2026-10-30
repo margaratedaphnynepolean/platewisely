@@ -1,0 +1,17 @@
+.form {
+  margin: var(--space-medium) 0;
+  padding: var(--space-medium);
+  border: 2px dashed var(--color-charcoal);
+  border-radius: var(--radius);
+}
+
+.heading {
+  margin-bottom: 0.25rem;
+  font-size: 1.15rem;
+}
+
+.message {
+  margin-top: var(--space-small);
+  min-height: 1.6em;
+  color: var(--color-chilli);
+}

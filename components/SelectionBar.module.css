@@ -1,0 +1,37 @@
+.bar {
+  position: sticky;
+  bottom: 0;
+  padding: var(--space-small) 0;
+  background: var(--color-cream);
+  border-top: 2px solid var(--color-charcoal);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+}
+
+.message {
+  flex: 1;
+}
+
+.clearButton {
+  padding: 0.5rem;
+  border: 0;
+  background: none;
+  color: var(--color-charcoal);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clearButton:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.inner :global(.button):disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

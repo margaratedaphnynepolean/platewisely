@@ -1,0 +1,22 @@
+.hero {
+  padding-top: var(--space-large);
+  padding-bottom: var(--space-large);
+}
+
+.heading {
+  font-size: clamp(2rem, 7vw, 3.6rem);
+  max-width: 14em;
+  margin-bottom: var(--space-medium);
+}
+
+.intro {
+  max-width: 34rem;
+  margin-bottom: var(--space-medium);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-medium);
+}

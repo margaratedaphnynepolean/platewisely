@@ -1,0 +1,10 @@
+.householdLine {
+  margin-bottom: var(--space-small);
+  font-weight: 600;
+}
+
+.pantryNote {
+  margin-bottom: var(--space-medium);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

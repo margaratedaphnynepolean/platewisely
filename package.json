@@ -1,20 +1,28 @@
 {
-  "name": "platewise",
+  "name": "platewisely",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "make-icons": "node scripts/make-icons.mjs",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@google/genai": "^2.32.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.9",
+    "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.35"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.35"
+    "eslint-config-next": "14.2.35",
+    "prettier": "^3.9.10",
+    "sharp": "^0.35.5"
   }
 }

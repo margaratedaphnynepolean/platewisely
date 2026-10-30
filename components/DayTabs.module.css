@@ -1,0 +1,22 @@
+.tabs {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: var(--space-medium);
+}
+
+.tab {
+  flex: 1;
+  padding: 0.55rem 0;
+  border: 2px solid var(--color-charcoal);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--color-charcoal);
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.tab[aria-pressed="true"] {
+  background: var(--color-turmeric);
+}

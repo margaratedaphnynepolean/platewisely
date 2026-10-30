@@ -1,0 +1,35 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-medium);
+}
+
+.button {
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 2px solid var(--color-charcoal);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--color-charcoal);
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-turmeric);
+}
+
+.button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.count {
+  min-width: 2ch;
+  text-align: center;
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}

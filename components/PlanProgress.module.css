@@ -1,0 +1,28 @@
+.wrapper {
+  margin: var(--space-medium) 0;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 0.9rem;
+  margin-bottom: 0.5rem;
+  appearance: none;
+  border: 2px solid var(--color-charcoal);
+  border-radius: var(--radius);
+  background: #fff;
+  overflow: hidden;
+}
+
+.bar::-webkit-progress-bar {
+  background: #fff;
+}
+
+.bar::-webkit-progress-value {
+  background: var(--color-turmeric);
+  transition: width 1s linear;
+}
+
+.bar::-moz-progress-bar {
+  background: var(--color-turmeric);
+}

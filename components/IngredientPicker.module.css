@@ -1,0 +1,7 @@
+.error {
+  margin: 0 0 var(--space-medium);
+  padding: var(--space-small);
+  border: 2px solid var(--color-chilli);
+  border-radius: var(--radius);
+  background: #fff;
+}

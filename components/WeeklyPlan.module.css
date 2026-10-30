@@ -1,0 +1,14 @@
+.dayName {
+  margin-bottom: var(--space-small);
+}
+
+.again {
+  margin: var(--space-medium) 0;
+}
+
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-small);
+  margin-top: var(--space-medium);
+}
